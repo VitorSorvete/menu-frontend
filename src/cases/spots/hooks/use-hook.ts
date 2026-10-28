@@ -1,9 +1,9 @@
 import { useQuery } from "@tanstack/react-query"
 import { SpotService } from "../services/spot.service"
 
-export function useHook() {
+export function useSpots() {
     return useQuery({
-        queryKey: ["spots"],
-        queryFn: () => SpotService.listAll()
+       queryKey: ["spots"],
+       queryFn: SpotService.listAll
     })
 }
