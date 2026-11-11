@@ -22,7 +22,7 @@ export function CategoryNav() {
                 "border-xl border border-transparent",
                 "transition-colors duration-200",
                 "hover:z-10 hover:text-[#B86A2C]",
-                selectedCategoryId === category.id
+                selectedCategoryId === String(category.id)
                   ? ["border-[#B86A2C]", "bg-primary/5", "text-[#B86A2C]"]
                   : ["text-foreground", "border-b-border/60"],
               )}

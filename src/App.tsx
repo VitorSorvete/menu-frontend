@@ -4,9 +4,9 @@ import { ProductPage } from "./pages/products/product-page"
 
 
 function App() {
-
   return (
-    <Routes>
+
+  <Routes>
       <Route element={<AppLayout />}>
         
         <Route index element={<Navigate to="products" />} />
